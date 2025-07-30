@@ -124,7 +124,7 @@ namespace Assignment10_ADV
 
             //Queue queue = new Queue();
 
-            
+
             //queue.Enqueue(1);           
             //queue.Enqueue("Apple");    
             //queue.Enqueue(5.28);       
@@ -135,6 +135,28 @@ namespace Assignment10_ADV
             //    Console.WriteLine(item);
             //}
 
+            #endregion
+
+
+            #region q8: 
+
+            //Stack<int> stack = new Stack<int>();
+
+            //stack.Push(10);
+            //stack.Push(20);
+            //stack.Push(30);
+            //stack.Push(40);
+            //stack.Push(50);
+
+            //Console.Write("Enter the target number to search: ");
+            //if (int.TryParse(Console.ReadLine(), out int target))
+            //{
+            //    Search.SearchInStack(stack, target);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid input. Please enter an integer.");
+            //}
             #endregion
 
         }
