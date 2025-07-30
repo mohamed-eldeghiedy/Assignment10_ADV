@@ -89,7 +89,16 @@
             #endregion
 
 
-            #region
+            #region q5: Given an array, implement a function to remove duplicate elements from an array.
+
+            //int[] input = { 1, 5, 4, 2, 4, 3, 5 };
+            //int[] result = Duplicates.RemoveDuplicates(input);
+
+            //Console.WriteLine("Array after removing duplicates:");
+            //Console.WriteLine(string.Join(", ", result));
+
+
+            #endregion
 
         }
     }
