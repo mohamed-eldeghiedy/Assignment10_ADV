@@ -105,16 +105,35 @@ namespace Assignment10_ADV
 
             #region q6: Given an array list , implement a function to remove all odd numbers from it.
 
-            ArrayList numbers = new ArrayList() { 1, 2, 3, 4, 5, 6, 7 };
+            //ArrayList numbers = new ArrayList() { 1, 2, 3, 4, 5, 6, 7 };
 
-            OddNumbers.RemoveOddNumbers(numbers);
+            //OddNumbers.RemoveOddNumbers(numbers);
 
-            Console.WriteLine(" after : ");
-            foreach (var item in numbers)
-            {
-                Console.Write(item + " ");
-            }
+            //Console.WriteLine(" after : ");
+            //foreach (var item in numbers)
+            //{
+            //    Console.Write(item + " ");
+            //}
 
+
+            #endregion
+
+
+            #region q7: Implement a queue that can hold different data types.  And insert the following data:
+
+
+            //Queue queue = new Queue();
+
+            
+            //queue.Enqueue(1);           
+            //queue.Enqueue("Apple");    
+            //queue.Enqueue(5.28);       
+
+            //Console.WriteLine("Queue contents:");
+            //foreach (var item in queue)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             #endregion
 
