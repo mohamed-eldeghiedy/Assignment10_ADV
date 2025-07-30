@@ -194,6 +194,21 @@ namespace Assignment10_ADV
 
             #endregion
 
+
+
+            #region q11:  Given a queue reverse first K elements of a queue, keeping the remaining elements in the same order
+
+
+            Queue<int> queue = new Queue<int>(new[] { 1, 2, 3, 4, 5 });
+            int k = 3;
+
+            Queue<int> result = ReverseK.ReverseFirstKElements(queue, k);
+
+            Console.WriteLine("Queue after reversing first K elements:");
+            Console.WriteLine("[" + string.Join(", ", result) + "]");
+
+            #endregion
+
         }
     }
     

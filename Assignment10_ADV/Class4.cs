@@ -98,7 +98,40 @@ namespace Assignment10_ADV
                 }
             }
 
-            return null; 
+            return null;
+        }
+    }
+
+
+
+
+
+     public class ReverseK
+    {
+         public static Queue<int> ReverseFirstKElements(Queue<int> queue, int k)
+        {
+            if (queue == null || k > queue.Count || k < 0)
+                throw new ArgumentException("Invalid value of k");
+
+            Stack<int> stack = new Stack<int>();
+
+            for (int i = 0; i < k; i++)
+            {
+                stack.Push(queue.Dequeue());
+            }
+
+            while (stack.Count > 0)
+            {
+                queue.Enqueue(stack.Pop());
+            }
+
+            int size = queue.Count;
+            for (int i = 0; i < size - k; i++)
+            {
+                queue.Enqueue(queue.Dequeue());
+            }
+
+            return queue;
         }
     }
 }
