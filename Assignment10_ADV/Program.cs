@@ -138,7 +138,7 @@ namespace Assignment10_ADV
             #endregion
 
 
-            #region q8: 
+            #region q8: Create a function that pushes a series of integers onto a stack. Then, search for a target integer in the stack
 
             //Stack<int> stack = new Stack<int>();
 
@@ -157,6 +157,20 @@ namespace Assignment10_ADV
             //{
             //    Console.WriteLine("Invalid input. Please enter an integer.");
             //}
+            #endregion
+
+
+
+            #region q9 : Given two arrays, find their intersection. Each element in the result should appear as many times as it shows in both arrays.
+
+            int[] arr1 = { 1, 2, 3, 4, 5 };
+            int[] arr2 = { 6, 4, 1 };
+
+            List<int> intersection = Intersection.FindIntersection(arr1, arr2);
+
+            Console.WriteLine("Intersection:");
+            Console.WriteLine("[" + string.Join(",", intersection) + "]");
+
             #endregion
 
         }

@@ -32,4 +32,35 @@ namespace Assignment10_ADV
             }
         }
     }
+
+
+
+    public class Intersection
+    {
+        public static List<int> FindIntersection(int[] nums1, int[] nums2)
+        {
+            Dictionary<int, int> countMap = new Dictionary<int, int>();
+            List<int> result = new List<int>();
+
+
+            foreach (int num in nums1)
+            {
+                if (countMap.ContainsKey(num))
+                    countMap[num]++;
+                else
+                    countMap[num] = 1;
+            }
+
+            foreach (int num in nums2)
+            {
+                if (countMap.ContainsKey(num) && countMap[num] > 0)
+                {
+                    result.Add(num);
+                    countMap[num]--;
+                }
+            }
+
+            return result;
+        }
+    }
 }
