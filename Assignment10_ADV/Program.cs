@@ -1,4 +1,6 @@
-﻿namespace Assignment10_ADV
+﻿using System.Collections;
+
+namespace Assignment10_ADV
 {
     internal class Program
     {
@@ -62,7 +64,7 @@
 
             //Queue<int> queue = new Queue<int>();
 
-            
+
             //queue.Enqueue(5);
             //queue.Enqueue(6);
             //queue.Enqueue(4);
@@ -74,6 +76,136 @@
             //Reverse.ReverseQueue(queue);
 
             //Console.WriteLine("Reversed Queue: " + string.Join(" ", queue));
+
+            #endregion
+
+
+
+            #region q4 : Given a Stack, implement a function to check if a string of parentheses is balanced using a stack.
+
+
+            //string input = "[()]{ }";
+            //Console.WriteLine(Balanced.IsBalanced(input));
+
+
+            #endregion
+
+
+            #region q5: Given an array, implement a function to remove duplicate elements from an array.
+
+            //int[] input = { 1, 5, 4, 2, 4, 3, 5 };
+            //int[] result = Duplicates.RemoveDuplicates(input);
+
+            //Console.WriteLine("Array after removing duplicates:");
+            //Console.WriteLine(string.Join(", ", result));
+
+
+            #endregion
+
+
+            #region q6: Given an array list , implement a function to remove all odd numbers from it.
+
+            //ArrayList numbers = new ArrayList() { 1, 2, 3, 4, 5, 6, 7 };
+
+            //OddNumbers.RemoveOddNumbers(numbers);
+
+            //Console.WriteLine(" after : ");
+            //foreach (var item in numbers)
+            //{
+            //    Console.Write(item + " ");
+            //}
+
+
+            #endregion
+
+
+            #region q7: Implement a queue that can hold different data types.  And insert the following data:
+
+
+            //Queue queue = new Queue();
+
+
+            //queue.Enqueue(1);           
+            //queue.Enqueue("Apple");    
+            //queue.Enqueue(5.28);       
+
+            //Console.WriteLine("Queue contents:");
+            //foreach (var item in queue)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+
+            #region q8: Create a function that pushes a series of integers onto a stack. Then, search for a target integer in the stack
+
+            //Stack<int> stack = new Stack<int>();
+
+            //stack.Push(10);
+            //stack.Push(20);
+            //stack.Push(30);
+            //stack.Push(40);
+            //stack.Push(50);
+
+            //Console.Write("Enter the target number to search: ");
+            //if (int.TryParse(Console.ReadLine(), out int target))
+            //{
+            //    Search.SearchInStack(stack, target);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid input. Please enter an integer.");
+            //}
+            #endregion
+
+
+
+            #region q9 : Given two arrays, find their intersection. Each element in the result should appear as many times as it shows in both arrays.
+
+            //int[] arr1 = { 1, 2, 3, 4, 5 };
+            //int[] arr2 = { 6, 4, 1 };
+
+            //List<int> intersection = Intersection.FindIntersection(arr1, arr2);
+
+            //Console.WriteLine("Intersection:");
+            //Console.WriteLine("[" + string.Join(",", intersection) + "]");
+
+            #endregion
+
+
+            #region q10:  Given an ArrayList of integers and a target sum, find if there is a contiguous sub list that sums up to the target.
+
+            //ArrayList numbers = new ArrayList() { 1, 2, 3, 7, 5 };
+            //int target = 12;
+
+            //ArrayList sublist = SublistWithSum.FindSublistWithSum(numbers, target);
+
+            //if (sublist != null)
+            //{
+            //    Console.WriteLine("Sublist found:");
+            //    Console.WriteLine("[" + string.Join(", ", sublist.ToArray()) + "]");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("No sublist found with the target sum.");
+            //}
+
+
+            #endregion
+
+
+
+            #region q11:  Given a queue reverse first K elements of a queue, keeping the remaining elements in the same order
+
+
+            Queue<int> queue = new Queue<int>(new[] { 1, 2, 3, 4, 5 });
+            int k = 3;
+
+            Queue<int> result = ReverseK.ReverseFirstKElements(queue, k);
+
+            Console.WriteLine("Queue after reversing first K elements:");
+            Console.WriteLine("[" + string.Join(", ", result) + "]");
 
             #endregion
 
