@@ -176,20 +176,20 @@ namespace Assignment10_ADV
 
             #region q10:  Given an ArrayList of integers and a target sum, find if there is a contiguous sub list that sums up to the target.
 
-            ArrayList numbers = new ArrayList() { 1, 2, 3, 7, 5 };
-            int target = 12;
+            //ArrayList numbers = new ArrayList() { 1, 2, 3, 7, 5 };
+            //int target = 12;
 
-            ArrayList sublist = SublistWithSum.FindSublistWithSum(numbers, target);
+            //ArrayList sublist = SublistWithSum.FindSublistWithSum(numbers, target);
 
-            if (sublist != null)
-            {
-                Console.WriteLine("Sublist found:");
-                Console.WriteLine("[" + string.Join(", ", sublist.ToArray()) + "]");
-            }
-            else
-            {
-                Console.WriteLine("No sublist found with the target sum.");
-            }
+            //if (sublist != null)
+            //{
+            //    Console.WriteLine("Sublist found:");
+            //    Console.WriteLine("[" + string.Join(", ", sublist.ToArray()) + "]");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("No sublist found with the target sum.");
+            //}
 
 
             #endregion
