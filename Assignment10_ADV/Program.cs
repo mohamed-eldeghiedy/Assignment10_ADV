@@ -79,11 +79,17 @@
 
 
 
-            #region q4 : 
+            #region q4 : Given a Stack, implement a function to check if a string of parentheses is balanced using a stack.
 
+
+            //string input = "[()]{ }";
+            //Console.WriteLine(Balanced.IsBalanced(input));
 
 
             #endregion
+
+
+            #region
 
         }
     }
