@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 
@@ -61,6 +62,43 @@ namespace Assignment10_ADV
             }
 
             return result;
+        }
+    }
+
+
+
+
+    public class SublistWithSum
+    {
+        public static ArrayList FindSublistWithSum(ArrayList list, int target)
+        {
+            int start = 0;
+            int currentSum = 0;
+            ArrayList result = new ArrayList();
+
+            for (int end = 0; end < list.Count; end++)
+            {
+                currentSum += (int)list[end];
+
+
+                while (currentSum > target && start < end)
+                {
+                    currentSum -= (int)list[start];
+                    start++;
+                }
+
+                if (currentSum == target)
+                {
+                    result.Clear();
+                    for (int i = start; i <= end; i++)
+                    {
+                        result.Add(list[i]);
+                    }
+                    return result;
+                }
+            }
+
+            return null; 
         }
     }
 }

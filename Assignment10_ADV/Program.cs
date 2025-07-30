@@ -163,13 +163,34 @@ namespace Assignment10_ADV
 
             #region q9 : Given two arrays, find their intersection. Each element in the result should appear as many times as it shows in both arrays.
 
-            int[] arr1 = { 1, 2, 3, 4, 5 };
-            int[] arr2 = { 6, 4, 1 };
+            //int[] arr1 = { 1, 2, 3, 4, 5 };
+            //int[] arr2 = { 6, 4, 1 };
 
-            List<int> intersection = Intersection.FindIntersection(arr1, arr2);
+            //List<int> intersection = Intersection.FindIntersection(arr1, arr2);
 
-            Console.WriteLine("Intersection:");
-            Console.WriteLine("[" + string.Join(",", intersection) + "]");
+            //Console.WriteLine("Intersection:");
+            //Console.WriteLine("[" + string.Join(",", intersection) + "]");
+
+            #endregion
+
+
+            #region q10:  Given an ArrayList of integers and a target sum, find if there is a contiguous sub list that sums up to the target.
+
+            ArrayList numbers = new ArrayList() { 1, 2, 3, 7, 5 };
+            int target = 12;
+
+            ArrayList sublist = SublistWithSum.FindSublistWithSum(numbers, target);
+
+            if (sublist != null)
+            {
+                Console.WriteLine("Sublist found:");
+                Console.WriteLine("[" + string.Join(", ", sublist.ToArray()) + "]");
+            }
+            else
+            {
+                Console.WriteLine("No sublist found with the target sum.");
+            }
+
 
             #endregion
 
