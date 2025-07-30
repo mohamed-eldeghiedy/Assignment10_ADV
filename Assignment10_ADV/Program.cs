@@ -1,4 +1,6 @@
-﻿namespace Assignment10_ADV
+﻿using System.Collections;
+
+namespace Assignment10_ADV
 {
     internal class Program
     {
@@ -96,6 +98,22 @@
 
             //Console.WriteLine("Array after removing duplicates:");
             //Console.WriteLine(string.Join(", ", result));
+
+
+            #endregion
+
+
+            #region q6: Given an array list , implement a function to remove all odd numbers from it.
+
+            ArrayList numbers = new ArrayList() { 1, 2, 3, 4, 5, 6, 7 };
+
+            OddNumbers.RemoveOddNumbers(numbers);
+
+            Console.WriteLine(" after : ");
+            foreach (var item in numbers)
+            {
+                Console.Write(item + " ");
+            }
 
 
             #endregion
